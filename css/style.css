@@ -206,18 +206,98 @@ body {
   color: #004A89;
 }
 
-.message .mission button {
+.message button {
   background-color: #007BFF;
   border: none;
   color: white;
-  padding: 10px 15px;
+  padding: 5px 15px;
   border-radius: 2px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.message .mission button:hover {
+.message button:hover {
   background-color: #004A89;
+}
+
+.event {
+  padding-top: 60px;
+}
+
+.event .event_gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #004A89;
+}
+
+.event .event_gallery button {
+  background-color: #007BFF;
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 2px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.event .event_gallery button:hover {
+  background-color: #004A89;
+}
+
+.event .event_gallery h5 {
+  color: white;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+.event .event_gallery button {
+  margin: 3px 10px;
+}
+
+.event .col-lg-6 button {
+  background-color: #004A89;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+}
+
+.event .event_name {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 5px;
+}
+
+.event .event_name h5, .event .event_name p {
+  padding-left: 10px;
+}
+
+.event .events {
+  background-color: #eee;
+}
+
+.event .events h5 {
+  background-color: #004A89;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  margin: 0;
+}
+
+.event .events_link {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.event .events_link ul {
+  padding-top: 15px;
+}
+
+.event .events_link ul li a {
+  text-decoration: none;
+  color: black;
 }
 
 @media (max-width: 480px) {
