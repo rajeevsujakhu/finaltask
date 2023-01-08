@@ -12,6 +12,7 @@ body
 
 .header
 {
+    padding-bottom: 10px;
     .hflex
     {
         display: flex;
@@ -48,6 +49,11 @@ body
                 }
             }
         }
+        button 
+        {
+            background-color: #FFFFFF;
+            border: none;
+        }
     }
 }
 
@@ -58,7 +64,125 @@ body
     {
         color: white !important;
     }
+    .navbar
+    {
+        margin: auto;
+    }
+    ul 
+    {
+        li 
+        {
+            &:hover
+            {
+                color: white;
+                ul 
+                {
+                    display: block;
+                }
+            }
+        }
+    }
 }
+
+.banner
+{
+    padding-top: 10px;
+    .recentnews
+    {
+        position: relative;
+        border: 1px solid #CE2525;
+        overflow: hidden;
+        height: 40px;
+        .news
+        {
+            background-color: #CE2525;
+            padding: 0;
+            width: 140px;
+            height: 40px;
+            position: absolute;
+            top: -1px;
+            p 
+            {
+                margin-bottom: 0;
+                padding: 5px 10px;
+                color: #FFFFFF;
+                font-weight: 900;
+            }
+        }
+        .owl-carousel
+        {
+            position: absolute;
+            top: 0;
+            left: 150px;
+            .owl-nav .owl-prev
+            {
+                background-color: #f4f4f4;
+                position: absolute;
+                top: 0px;
+                right: 185px;
+                padding: 6px 15px !important;
+                border: 0.5px solid gainsboro;
+                &:hover
+                {
+                    background-color: #EEEEEE;
+                }
+            }
+            .owl-nav .owl-next
+            {
+                background-color: #f4f4f4;
+                position: absolute;
+                top: 0px;
+                right: 150px;
+                padding: 6px 15px !important;
+                border: 0.5px solid gainsboro;
+                &:hover
+                {
+                    background-color: #EEEEEE;
+                }
+            }
+            .owl-stage-outer
+            {
+                padding-top: 5px;
+            }
+        }
+    }
+
+    .banner_container
+    {
+        padding-top: 10px;
+    }
+    .card_banner
+    {
+        background-color: #eee;
+        text-align: center;
+    }
+    .card_body 
+    {
+        padding: 1.25rem;
+        h5
+        {
+            padding-top: 5px;
+        }
+        p 
+        {
+            margin: 0;
+        }
+    }
+    .image
+    {
+        padding: 0.25rem;
+        background-color: #fff;
+        border: 1px solid #dee2e6;
+        border-radius: 0.25rem;
+        max-width: 100%;
+        height: auto;
+    }
+    .sbanner
+    {
+        padding-top: 0px;
+    }
+}
+
 
 
 @media (max-width:480px)
@@ -76,5 +200,12 @@ body
     .navbar 
     {
         width: 100%;
+    }
+    .lang_translator
+    {
+        ul 
+        {
+            padding-top: 0;
+        }
     }
 }

@@ -9,6 +9,10 @@ body {
   padding: 10px 20px;
 }
 
+.header {
+  padding-bottom: 10px;
+}
+
 .header .hflex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,6 +46,11 @@ body {
   color: black;
 }
 
+.header .lang_translator button {
+  background-color: #FFFFFF;
+  border: none;
+}
+
 .nav {
   background-color: #004A89;
 }
@@ -50,12 +59,124 @@ body {
   color: white !important;
 }
 
+.nav .navbar {
+  margin: auto;
+}
+
+.nav ul li:hover {
+  color: white;
+}
+
+.nav ul li:hover ul {
+  display: block;
+}
+
+.banner {
+  padding-top: 10px;
+}
+
+.banner .recentnews {
+  position: relative;
+  border: 1px solid #CE2525;
+  overflow: hidden;
+  height: 40px;
+}
+
+.banner .recentnews .news {
+  background-color: #CE2525;
+  padding: 0;
+  width: 140px;
+  height: 40px;
+  position: absolute;
+  top: -1px;
+}
+
+.banner .recentnews .news p {
+  margin-bottom: 0;
+  padding: 5px 10px;
+  color: #FFFFFF;
+  font-weight: 900;
+}
+
+.banner .recentnews .owl-carousel {
+  position: absolute;
+  top: 0;
+  left: 150px;
+}
+
+.banner .recentnews .owl-carousel .owl-nav .owl-prev {
+  background-color: #f4f4f4;
+  position: absolute;
+  top: 0px;
+  right: 185px;
+  padding: 6px 15px !important;
+  border: 0.5px solid gainsboro;
+}
+
+.banner .recentnews .owl-carousel .owl-nav .owl-prev:hover {
+  background-color: #EEEEEE;
+}
+
+.banner .recentnews .owl-carousel .owl-nav .owl-next {
+  background-color: #f4f4f4;
+  position: absolute;
+  top: 0px;
+  right: 150px;
+  padding: 6px 15px !important;
+  border: 0.5px solid gainsboro;
+}
+
+.banner .recentnews .owl-carousel .owl-nav .owl-next:hover {
+  background-color: #EEEEEE;
+}
+
+.banner .recentnews .owl-carousel .owl-stage-outer {
+  padding-top: 5px;
+}
+
+.banner .banner_container {
+  padding-top: 10px;
+}
+
+.banner .card_banner {
+  background-color: #eee;
+  text-align: center;
+}
+
+.banner .card_body {
+  padding: 1.25rem;
+}
+
+.banner .card_body h5 {
+  padding-top: 5px;
+}
+
+.banner .card_body p {
+  margin: 0;
+}
+
+.banner .image {
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.banner .sbanner {
+  padding-top: 0px;
+}
+
 @media (max-width: 480px) {
   .header .hflex ul {
     padding-top: 0px;
   }
   .navbar {
     width: 100%;
+  }
+  .lang_translator ul {
+    padding-top: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
