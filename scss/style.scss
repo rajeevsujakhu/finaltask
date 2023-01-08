@@ -183,6 +183,58 @@ body
     }
 }
 
+.message
+{
+    padding-top: 30px;
+    .title
+    {
+        text-align: center;
+        font-weight: 700;
+        font-size: 34px;
+        padding-bottom: 10px;
+    }
+    .mission
+    {
+        border: 1px solid rgba(0,0,0,.125);
+        border-radius: 0.25rem;
+        text-align: center;
+        background-color: #EEEEEE;
+        padding: 20px;
+        line-height: 1.5;
+        img 
+        {
+            padding: 5px;
+            border: 1px solid rgba(0,0,0,.125);
+            border-radius: 0.25rem;
+        }
+        .text-left
+        {
+            text-align: center;
+        }
+        p 
+        {
+            text-align: justify;
+        }
+        h1 
+        {
+            color: #004A89;
+        }
+        button 
+        {
+            background-color: #007BFF;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 2px;
+            transition: 0.3s;
+            &:hover
+            {
+                background-color: #004A89;
+            }
+        }
+    }
+}
+
 
 
 @media (max-width:480px)

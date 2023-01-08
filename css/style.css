@@ -168,6 +168,58 @@ body {
   padding-top: 0px;
 }
 
+.message {
+  padding-top: 30px;
+}
+
+.message .title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 34px;
+  padding-bottom: 10px;
+}
+
+.message .mission {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  text-align: center;
+  background-color: #EEEEEE;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+.message .mission img {
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.message .mission .text-left {
+  text-align: center;
+}
+
+.message .mission p {
+  text-align: justify;
+}
+
+.message .mission h1 {
+  color: #004A89;
+}
+
+.message .mission button {
+  background-color: #007BFF;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 2px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.message .mission button:hover {
+  background-color: #004A89;
+}
+
 @media (max-width: 480px) {
   .header .hflex ul {
     padding-top: 0px;
