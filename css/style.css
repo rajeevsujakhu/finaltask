@@ -178,5 +178,20 @@ body {
   .lang_translator ul {
     padding-top: 0;
   }
+  .banner .recentnews .owl-carousel {
+    left: 0;
+  }
+  .news {
+    display: none;
+  }
+  .banner .recentnews .owl-carousel .owl-nav .owl-next {
+    right: 0;
+  }
+  .banner .recentnews .owl-carousel .owl-nav .owl-prev {
+    right: 36px;
+  }
+  .banner .recentnews {
+    height: 36px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
