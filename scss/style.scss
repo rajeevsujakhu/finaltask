@@ -117,10 +117,13 @@ body
             .owl-nav .owl-prev
             {
                 background-color: #f4f4f4;
+                font-size: 28px;
+                color: #999999;
+                font-weight: 900;
                 position: absolute;
-                top: 0px;
-                right: 185px;
-                padding: 6px 15px !important;
+                top: -5px;
+                right: 226px;
+                padding: 0 15px !important;
                 border: 0.5px solid gainsboro;
                 &:hover
                 {
@@ -131,9 +134,12 @@ body
             {
                 background-color: #f4f4f4;
                 position: absolute;
-                top: 0px;
+                color: #999999;
+                font-weight: 900;
+                font-size: 28px;
+                top: -5px;
                 right: 150px;
-                padding: 6px 15px !important;
+                padding: 0px 15px !important;
                 border: 0.5px solid gainsboro;
                 &:hover
                 {
@@ -144,6 +150,18 @@ body
             {
                 padding-top: 5px;
             }
+        }
+        .stop 
+        {
+            background-color: #f4f4f4;
+            color: #999999;
+            position: absolute;
+            right: 36px;
+            max-width: 41px;
+            top: -1px;
+            z-index: 999;
+            padding: 8px 16px !important;
+            border: 0.5px solid gainsboro;
         }
     }
 
@@ -317,6 +335,118 @@ body
     }
 }
 
+.footer
+{
+    background-color: #004A89;
+    padding-top: 80px;
+    color: white;
+    .fpart
+    {
+        text-align: center;
+        ul 
+        {
+            li 
+            {
+                list-style: none;
+                display: inline;
+                a
+                {
+                    text-decoration: none;
+                    color: white;
+                    padding-left: 10px;
+                    font-size: 20px;
+                }
+            }
+        }
+        span
+        {
+            transition: 0.2s;
+        }
+        span:hover
+        {
+            color: red;
+        }
+        .school 
+        {
+            width: 300px;
+        }
+        p, h5 
+        {
+            text-align: left;
+            padding-left: 80px;
+        }
+    }
+    img 
+    {
+        width: 150px;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+    .spart
+    {
+        ul 
+        {
+            padding-left: 0;
+            li 
+            {
+                list-style: none;
+                line-height: 2.2;
+                a 
+                {
+                    color: white;
+                    text-decoration: none;
+                    &:hover
+                    {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    .tpart
+    {
+        line-height: 1.8;
+        ul 
+        {
+            li 
+            {
+                list-style: none;
+                display: inline;
+                a
+                {
+                    text-decoration: none;
+                    color: white;
+                    padding-left: 10px;
+                    font-size: 20px;
+                }
+            }
+        }
+        p 
+        {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.copyright
+{
+    padding: 5px 0;
+    .cright
+    {
+        display: flex;
+        justify-content: space-between;
+        span 
+        {
+            color: #007BFF;
+            font-weight: 700;
+        }
+        p 
+        {
+            margin-bottom: 0;
+        }
+    }
+}
+
 
 
 @media (max-width:480px)
@@ -356,10 +486,30 @@ body
     }
     .banner .recentnews .owl-carousel .owl-nav .owl-prev
     {
-        right: 36px;
+        right: 76px;
     }
     .banner .recentnews
     {
         height: 36px;
+    }
+    .spart, .tpart 
+    {
+        padding-left: 20px;
+    }
+    .fpart 
+    {
+        p, h5 
+        {
+            padding-left: 20px !important;
+        }
+    }
+    .cright 
+    {
+        flex-direction: column;
+        padding-top: 10px;
+        .powered 
+        {
+            text-align: end;
+        }
     }
 }
