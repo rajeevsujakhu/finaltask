@@ -51,24 +51,110 @@ body {
   border: none;
 }
 
-.nav {
+.navbar {
+  background-color: #004A89;
+  z-index: 99999;
+}
+
+.navbar nav .mainnav {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar nav .mainnav .navitems {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+}
+
+.navbar nav .mainnav .navitems a {
+  display: block;
+  padding: 0 15px;
+  color: white;
+  text-decoration: none;
+  line-height: 60px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.navbar nav .mainnav .navitems a:hover {
+  color: #73777F;
+}
+
+.navbar nav .mainnav .navitems .fdown li {
+  width: 310px;
+}
+
+.navbar nav .mainnav .navitems:hover .dropdown {
+  display: block;
+}
+
+.navbar nav .mainnav .dropdown {
+  position: absolute;
+  list-style: none;
+  top: 60px;
+  margin: 0;
+  padding: 0;
+  background-color: #004A89;
+  display: none;
+}
+
+.navbar nav .mainnav .dropdown li {
+  width: 200px;
+  display: list-item;
+}
+
+.navbar nav .mainnav .dropdown li a {
+  line-height: 35px;
+}
+
+.navbar nav .mainnav .dropdown .navitem2 {
+  position: relative;
+}
+
+.navbar nav .mainnav .dropdown .navitem2:hover .dropdown2 {
+  display: block;
+}
+
+.navbar nav .mainnav .dropdown .dropdown2 {
+  margin: 0;
+  padding: 0;
+  display: none;
+  position: absolute;
+  top: -5px;
+  left: 200px;
+}
+
+.navbar nav .mainnav .dropdown .dropdown2 li {
+  list-style: none;
   background-color: #004A89;
 }
 
-.nav .navbar-brand, .nav .nav-link {
-  color: white !important;
+.navbar nav .mainnav .dropdown .dropdown2 li a {
+  line-height: 40px;
 }
 
-.nav .navbar {
-  margin: auto;
-}
-
-.nav ul li:hover {
+.navbar nav .checkbtn, .navbar nav .checkbtn1 {
+  font-size: 30px;
   color: white;
+  padding-top: 5px;
+  cursor: pointer;
+  display: none;
 }
 
-.nav ul li:hover ul {
+.navbar nav .checkbtn1 {
   display: block;
+  height: 10px;
+  position: relative;
+  left: -250px;
+  top: -250px;
+  z-index: 9;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.navbar nav #click {
+  display: none;
 }
 
 .banner {
@@ -320,12 +406,15 @@ body {
 
 .footer {
   background-color: #004A89;
-  padding-top: 80px;
   color: white;
 }
 
 .footer .fpart {
   text-align: center;
+}
+
+.footer .fpart ul {
+  padding-left: 0;
 }
 
 .footer .fpart ul li {
@@ -334,36 +423,12 @@ body {
 }
 
 .footer .fpart ul li a {
-  text-decoration: none;
-  color: white;
   padding-left: 10px;
-  font-size: 20px;
+  color: white;
 }
 
-.footer .fpart span {
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
-.footer .fpart span:hover {
-  color: red;
-}
-
-.footer .fpart .school {
-  width: 300px;
-}
-
-.footer .fpart p, .footer .fpart h5 {
-  text-align: left;
-  padding-left: 80px;
-}
-
-.footer img {
-  width: 150px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: 20px;
+.footer .fpart p {
+  padding: 10px 0;
 }
 
 .footer .spart ul {
@@ -372,36 +437,43 @@ body {
 
 .footer .spart ul li {
   list-style: none;
-  line-height: 2.2;
+  display: inline;
 }
 
 .footer .spart ul li a {
   color: white;
-  text-decoration: none;
-}
-
-.footer .spart ul li a:hover {
-  text-decoration: underline;
-}
-
-.footer .tpart {
-  line-height: 1.8;
+  padding-left: 10px;
 }
 
 .footer .tpart ul li {
-  list-style: none;
-  display: inline;
+  line-height: 34px;
 }
 
 .footer .tpart ul li a {
-  text-decoration: none;
   color: white;
-  padding-left: 10px;
-  font-size: 20px;
+  text-decoration: none;
 }
 
-.footer .tpart p {
-  margin-bottom: 0;
+.footer .fopart {
+  line-height: 16px;
+}
+
+.footer .fopart ul li {
+  display: inline;
+  padding-left: 10px;
+}
+
+.footer .fopart ul li a {
+  color: white;
+}
+
+.footer .copyright {
+  border-top: 0.3px solid black;
+  padding: 20px 0;
+}
+
+.footer .copyright p {
+  margin: 0;
 }
 
 .copyright {
@@ -426,12 +498,141 @@ body {
   margin-bottom: 0;
 }
 
+@media (max-width: 1400px) {
+  .navbar nav .mainnav .navitems a {
+    padding: 0 12px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar nav .mainnav .navitems a {
+    padding: 0 39px;
+  }
+  #click:checked ~ .mainnav {
+    left: 0;
+  }
+  #click:checked ~ .checkbtn1 {
+    left: 600px;
+    top: -200px;
+  }
+}
+
+@media (max-width: 1024px) {
+  nav .mainnav {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: -100%;
+    height: 100vh;
+    text-align: center;
+    background-color: #004A89;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  nav .mainnav .navitems {
+    display: block !important;
+  }
+  nav .mainnav a {
+    line-height: 34px !important;
+  }
+  nav .checkbtn {
+    display: block !important;
+    position: relative;
+    left: 650px;
+  }
+  nav #click:checked ~ .mainnav {
+    left: 0;
+  }
+  nav #click:checked ~ .checkbtn1 {
+    left: 600px;
+    top: -145px;
+  }
+  .footer .fpart img {
+    width: 40%;
+  }
+  .footer .fpart p {
+    padding-top: 20px;
+  }
+  .footer .spart, .footer .fopart {
+    text-align: center;
+    padding-top: 20px;
+  }
+  .footer .tpart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .checkbtn {
+    display: block !important;
+    position: relative;
+    left: 460px !important;
+  }
+  #click:checked ~ .checkbtn1 {
+    left: 440px !important;
+    top: -230px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .checkbtn {
+    display: block !important;
+    position: relative;
+    left: 400px !important;
+  }
+  #click:checked ~ .checkbtn1 {
+    left: 380px !important;
+    top: -220px !important;
+  }
+  .arrow button {
+    bottom: 40px;
+    right: 40px;
+  }
+}
+
 @media (max-width: 480px) {
   .header .hflex ul {
     padding-top: 0px;
   }
-  .navbar {
+  nav .mainnav {
+    position: fixed;
     width: 100%;
+    top: 0px;
+    left: -100%;
+    height: 100vh;
+    text-align: center;
+    background-color: #004A89;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  nav .mainnav .navitems {
+    display: block !important;
+  }
+  nav .mainnav a {
+    line-height: 34px !important;
+  }
+  nav .checkbtn {
+    display: block !important;
+    position: relative;
+    left: 260px !important;
+  }
+  nav #click:checked ~ .mainnav {
+    left: 0;
+  }
+  nav #click:checked ~ .checkbtn1 {
+    left: 250px !important;
+    top: -200px !important;
   }
   .lang_translator ul {
     padding-top: 0;

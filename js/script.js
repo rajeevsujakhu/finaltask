@@ -8,11 +8,11 @@ $(document).ready(function(){
         autoplayTimeout:3000,
     });
   });
-    $('.stop').on('click',function(){
-    owl.trigger('stop.owl.autoplay')
-    })
     $('.play').on('click',function(){
         owl.trigger('play.owl.autoplay',[3000])
+    })
+    $('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
     })
     
     $(document).ready(function () {
