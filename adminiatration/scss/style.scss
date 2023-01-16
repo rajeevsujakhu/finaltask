@@ -1,0 +1,634 @@
+
+
+$brand : #004A89;
+
+
+.head
+{
+    text-align: center;
+    background-color: #D6F0FF;
+    .header 
+    {
+        .abouts
+        {
+            padding-top: 15px;
+        }
+        .lswitch
+        {
+            display: flex;
+            padding-top: 15px;
+            p 
+            {
+                padding-right: 5px;
+                margin: 0;
+            }
+        }
+        .logo
+        {
+            img 
+            {
+                width: 100%;
+            }
+        }
+        ul 
+        {
+            padding-left: 0;
+            margin: 0;
+            list-style: none;
+            li 
+            {
+                display: inline;
+                padding-left: 12px;
+                color: #2D3171;
+                &:hover
+                {
+                    color: #4054B2;
+                }
+            }
+        }
+    }
+}
+
+.navbar 
+{
+    background-color: $brand;
+    nav
+    {
+        z-index: 99999;
+        .mainnav 
+        {
+            padding: 0;
+            margin: 0;
+            .navitems
+            {
+                list-style: none;
+                display: inline-block;
+                position: relative;
+                a 
+                {
+                    display: block;
+                    padding: 0 15px;
+                    color: white;
+                    text-decoration: none;
+                    line-height: 34px;
+                    transition: 0.3s;
+                    &:hover
+                    {
+                        color: #73777F;
+                    }
+                }
+                .fdown
+                {
+                    li 
+                    {
+                        width: 310px;
+                    }
+                }
+                &:hover
+                {
+                    .dropdown 
+                    {
+                        display: block;
+                    }
+                }
+            }
+            .dropdown
+            {
+                position: absolute;
+                list-style: none;
+                top: 30px;
+                margin: 0;
+                padding: 0;
+                background-color: $brand;
+                display: none;
+                li 
+                {
+                    width: 200px;
+                    display: list-item;
+                    a 
+                    {
+                        line-height: 35px;
+                    }
+                }
+                .navitem2 
+                {
+                    position: relative;
+                    &:hover
+                    {
+                        .dropdown2
+                        {
+                            display: block;
+                        }
+                    }
+                }
+                .dropdown2
+                {
+                    margin: 0;
+                    padding: 0;
+                    display: none;
+                    position: absolute;
+                        top: -5px;
+                        left: 200px;
+                    li 
+                    {
+                        list-style: none;
+                        
+                        background-color: $brand;
+                        a 
+                        {
+                            line-height: 40px;
+                        }
+                    }
+                }
+            }
+        }
+        .checkbtn , .checkbtn1
+        {
+            font-size: 30px;
+            color: white;
+            padding-top: 5px;
+            cursor: pointer;
+            display: none;
+        }
+        .checkbtn1
+        {
+            display: block;
+            height: 10px;
+            position: relative;
+            left: -250px;
+            top: -250px;
+            z-index: 9;
+            transition: 0.4s;
+        }
+        #click 
+        {
+            display: none;
+        }
+    }
+}
+
+.headadmin
+{
+    padding-top: 40px;
+    padding-bottom: 70px;
+    .admin 
+    {
+            img 
+            {
+                width: 40px;
+                border-radius: 50%;
+            }
+        table 
+        {
+            margin-top: 30px;
+            width: 100%;
+            tbody
+            {
+                line-height: 60px;
+            }
+        }
+    }
+
+    .col-lg-8
+    {
+        padding-right: 20px;
+        border-right: 1px solid black;
+    }
+    .col-lg-4
+    {
+        padding-left: 30px;
+    }
+    h4
+    {
+        color: $brand;
+    }
+    .spart
+    {
+        padding-left: 20px;
+        .field
+        {
+            width: 74%;
+            font-size: 14px;
+            line-height: 1.8;
+            padding: 6px 12px;
+            vertical-align: middle;
+            background-color: transparent;
+            color: #333;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+        .vacancy
+        {
+            color: $brand;
+            padding: 16px 0;
+        }
+        .calendar
+        {
+            border-left: 5px solid $brand;
+        }
+        table
+        {
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            line-height: 40px;
+            text-align: center;
+            thead
+            {
+                padding: 10px 0;
+                border-bottom: 0.3px solid rgb(136, 133, 133);
+            }
+        }
+    }
+}
+
+.footer
+{
+    background-color: $brand;
+    color: white;
+    .fpart 
+    {
+        text-align: center;
+        ul 
+        {
+            padding-left: 0;
+            li
+            {
+                list-style: none;
+                display: inline;
+                a 
+                {
+                    padding-left: 10px;
+                    color: white;
+                }
+            }
+        }
+        p 
+        {
+            padding: 10px 0;
+        }
+    }
+    .spart
+    {
+        ul 
+        {
+            padding-left: 0;
+            li 
+            {
+                list-style: none;
+                display: inline; 
+                a
+                {
+                    color: white;
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+    .tpart
+    {
+        ul 
+        {
+            li 
+            {
+                line-height: 34px;
+                a 
+                {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .fopart
+    {
+        line-height: 16px;
+        ul 
+        {
+            li 
+            {
+                display: inline;
+                padding-left: 10px;
+                a 
+                {
+                    color: white;
+                }
+            }
+        }
+    }
+    .copyright
+    {
+        border-top: 0.3px solid black;
+        padding: 20px 0;
+        p 
+        {
+            margin: 0;
+        }
+    }
+}
+
+.arrow
+{
+    z-index: 999;
+    display: none;
+    button
+    {
+        background-color: #73777F;
+        border-radius: 2px;
+        padding: 10px 14px;
+        border: 0;
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+        color: white;
+    }
+}
+
+
+@media(max-width:1400px)
+{
+    .navbar nav .mainnav .navitems a
+    {
+        padding: 0 12px;
+        font-size: 14px;
+    }
+}
+
+@media(max-width:1200px)
+{
+    .navbar nav .mainnav .navitems a
+    {
+        padding: 0 39px;
+    }
+    
+    .headhistory 
+    {
+        .col-lg-4
+        {
+            padding-left: 20px;
+        }
+    }
+}
+
+@media(max-width:1024px)
+{
+    .language 
+    {
+        display: flex;
+        justify-content: center;
+    }
+    .navbar nav .mainnav .navitems a
+    {
+        padding: 0 12px;
+        font-size: 18px !important;
+        line-height: 38px !important;
+    }
+    nav 
+    {
+        .mainnav 
+        {
+            position: fixed;
+            width: 100%;
+            top: 0px;
+            left: -100%;
+            height: 100vh;
+            text-align: center;
+            background-color: $brand;
+            transition: all .5s;
+            .navitems
+            {
+                display: block !important;
+                border-bottom: 1px solid rgba(165, 164, 164, 0.3);
+                .dropdown
+                {
+                    position: relative;
+                    width: 100%;
+                    top: 0px;
+                    left: 320px;
+                    text-align: left;
+                    .dropdown2 
+                    {
+                        position: relative;
+                        width: 100%;
+                        left: 10px;
+                    }
+                }
+            }
+            a 
+            {
+                line-height: 34px !important;
+            }
+        }
+        .checkbtn 
+        {
+            display: block !important;
+            position: relative;
+            left: 650px;
+        }
+        
+        #click:checked ~ .mainnav
+        {
+            left: 0;
+        }
+        #click:checked ~ .checkbtn1
+        {
+            left: 550px;
+            top: -330px;
+        }
+    }
+    .headhistory 
+    {
+        .col-lg-8 
+        {
+            border: none;
+        }
+        .col-lg-4
+        {
+            padding-left: 10px;
+        }
+    }
+    .footer 
+    {
+        .fpart 
+        {
+            img 
+            {
+                width: 40%;
+            }
+            p 
+            {
+                padding-top: 20px;
+            }
+        }
+        .spart , .fopart
+        {
+            text-align: center;
+            padding-top: 20px;
+        }
+        .tpart
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+    }
+}
+
+@media(max-width:768px)
+{
+    .dropdown
+    {
+        position: relative;
+        width: 100%;
+        top: 0px;
+        left: 280px !important;
+        text-align: left;
+        .dropdown2 
+        {
+            position: relative;
+            width: 100%;
+            left: 10px;
+        }
+    }
+    .checkbtn 
+    {
+        display: block !important;
+        position: relative;
+        left: 460px !important;
+    }
+    #click:checked ~ .checkbtn1
+    {
+        left: 400px !important;
+        top: -280px !important;
+    }
+    .arrow 
+    {
+        button 
+        {
+            bottom: 40px;
+            right: 40px;
+        }
+    }
+}
+
+@media(max-width:600px)
+{
+    .dropdown
+    {
+        position: relative;
+        width: 100%;
+        top: 0px;
+        left: 200px !important;
+        text-align: left;
+        .dropdown2 
+        {
+            position: relative;
+            width: 100%;
+            left: 10px;
+        }
+    }
+    .checkbtn 
+    {
+        display: block !important;
+        position: relative;
+        left: 400px !important;
+    }
+    #click:checked ~ .checkbtn1
+    {
+        left: 400px !important;
+        top: -280px !important;
+    }
+    .arrow 
+    {
+        button 
+        {
+            bottom: 40px;
+            right: 40px;
+        }
+    }
+    .headhistory
+    {
+        padding-left: 10px;
+    }
+}
+
+@media(max-width:480px)
+{
+    .head 
+    {
+        .socials
+        {
+            text-align: center;
+            li 
+            {
+                padding: 0 10px;
+            }
+        }
+        .abouts 
+        {
+            font-size: 14px;
+            text-align: center;
+        }
+        .language 
+        {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    nav 
+    {
+        .dropdown
+        {
+            position: relative;
+            width: 100%;
+            top: 0px;
+            left: 0px !important;
+            text-align: left;
+            .dropdown2 
+            {
+                position: relative;
+                width: 100%;
+                left: 10px !important;
+            }
+        }
+        .mainnav 
+        {
+            position: fixed;
+            width: 100%;
+            top: 0px;
+            left: -100%;
+            height: 100vh;
+            text-align: center;
+            background-color: $brand;
+            transition: all .5s;
+            .navitems
+            {
+                display: block !important;
+            }
+            a 
+            {
+                line-height: 34px !important;
+            }
+        }
+        .checkbtn 
+        {
+            display: block !important;
+            position: relative;
+            left: 300px !important;
+        }
+        
+        #click:checked ~ .mainnav
+        {
+            left: 0;
+        }
+        #click:checked ~ .checkbtn1
+        {
+            left: 250px !important;
+            top: -250px !important;
+        }
+    }
+    .headhistory .spart
+    {
+        padding-left: 0;
+    }
+}
