@@ -564,7 +564,7 @@ body {
   }
   nav #click:checked ~ .checkbtn1 {
     left: 550px;
-    top: -330px;
+    top: -200px;
   }
   .footer .fpart img {
     width: 40%;
@@ -611,7 +611,7 @@ body {
   }
   #click:checked ~ .checkbtn1 {
     left: 400px !important;
-    top: -280px !important;
+    top: -220px !important;
   }
 }
 
@@ -635,7 +635,7 @@ body {
   }
   #click:checked ~ .checkbtn1 {
     left: 400px !important;
-    top: -280px !important;
+    top: -220px !important;
   }
   .arrow button {
     bottom: 40px;
@@ -685,8 +685,8 @@ body {
     left: 0;
   }
   nav #click:checked ~ .checkbtn1 {
-    left: 250px !important;
-    top: -250px !important;
+    left: 280px !important;
+    top: -190px !important;
   }
   .lang_translator ul {
     padding-top: 0;
