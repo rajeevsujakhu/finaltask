@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.css">
+
+    <title>History- Mahadev Janata Model Secondary School</title>
+    <link rel="icon" href="https://www.mjss.edu.np/wp-content/uploads/2020/08/nepali-logo.jpg" type="image/icon type">
+  </head>
+  <body id="up">
+
+
+    <!-- header start -->
+        <div class="container-fluid head">
+            <div class="container">
+
+                    <section class="header">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <div class="logo">
+                                    <img src="https://www.mjss.edu.np/wp-content/uploads/2020/08/logo-with-name-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="abouts">
+                                    <ul>
+                                        <li><i class="fa-solid fa-phone"></i> +977-046-530050 , 9854037229</li>
+                                        <li><i class="fa-solid fa-envelope"></i> mahadevjantahss@gmail.com</li>
+                                        <li><i class="fa-solid fa-location-dot"></i> Harion-Municipality-8, Sarlahi</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 language">
+                                <div class="lswitch">
+                                    <p><img src="https://hopeful-hugle-2a4d5c.netlify.app/assets/images/flag/np_flag.png" alt=""> Nepali</p>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                        <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                                      </div>
+                                      <p><img src="https://hopeful-hugle-2a4d5c.netlify.app/assets/images/flag/en_flag.png" alt=""> English</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+            </div>
+        </div>
+    <!-- header end -->
+    
+    <!-- navbar starts -->
+        <div class="container-fluid navbar">
+            <div class="container">
+                <nav>
+                    <input type="checkbox" id="click">
+                    <label for="click" class="checkbtn" onclick="disableScroll()">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                    <label for="click" class="checkbtn1" onclick="enableScroll()">
+                        <i class="fa-solid fa-xmark"></i>
+                    </label>
+                    <ul class="mainnav">
+                        <li class="navitems"><a href="../index.html">Home</a></li>
+                        <li class="navitems"><a href="#">About Us <i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="dropdown fdown">
+                                <li><a href="#">History</a></li>
+                                <li><a href="#">School Profile</a></li>
+                                <li><a href="#">School Management Committee(SMC)</a></li>
+                                <li><a href="#">Our Location</a></li>
+                            </ul>
+                        </li>
+                        <li class="navitems"><a href="#">Admission <i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#">Admission Notice</a></li>
+                                <li><a href="#">Admission Result</a></li>
+                                <li><a href="#">Admission Form</a></li>
+                                <li><a href="#">Scholarship Notice</a></li>
+                                <li><a href="#">Scholarship Admission Form</a></li>
+                            </ul>
+                        </li>
+                        <li class="navitems"><a href="#">Employee <i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#">Administration</a></li>
+                                <li class="navitem2"><a href="#">Academics <i class="fa-solid fa-chevron-right"></i></a>
+                                    <ul class="dropdown2">
+                                        <li><a href="#">Secondary Level</a></li>
+                                        <li><a href="#">Lower Secondary Level</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navitems"><a href="#">Article <i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#">Teachers' Zone</a></li>
+                                <li><a href="#">Students' Zone</a></li>
+                            </ul>
+                        </li>
+                        <li class="navitems"><a href="#">Events <i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#">School Day</a></li>
+                                <li><a href="#">Games & Sports</a></li>
+                                <li><a href="#">Saraswati Pooja</a></li>
+                                <li><a href="#">Cultural Programe</a></li>
+                                <li><a href="#">Rastrapati Running Shield</a></li>
+                            </ul>
+                        </li>
+                        <li class="navitems"><a href="#">Gallery <i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#">Photo Gallery</a></li>
+                                <li><a href="#">Video Gallery</a></li>
+                            </ul>
+                        </li>
+                        <li class="navitems"><a href="#">Career <i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#">Vacancy</a></li>
+                                <li><a href="#">Syllabus</a></li>
+                            </ul>
+                        </li>
+                        <li class="navitems"><a href="#">Others <i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#">Student Panel</a></li>
+                                <li><a href="#">Almuni</a></li>
+                                <li><a href="#">Class</a></li>
+                                <li><a href="#">Online Class</a></li>
+                            </ul>
+                        </li>
+                        <li class="navitems"><a href="#">Notice</a></li>
+                        <li class="navitems"><a href="#">Results</a></li>
+                        <li class="navitems"><a href="../contact us/index.html">Contact Us</a></li>
+                    </ul>
+                    
+                </nav>
+            </div>
+        </div>
+    <!-- navbar ends -->
+
+
+    <div class="container">
+        <!-- history start -->
+        <section class="headhistory">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="history">
+                        <h3>History</h3>
+                        <img src="https://www.mjss.edu.np/wp-content/uploads/2020/08/Front-Image-of-Mahadev-Janata.jpg" alt="" width="100%">
+                        <p>The idea of establishing a community school that would provide quality all-round education to meritorious students coming from every walk of life in an environment that fosters unity in diversity was conceived in 1964 A.D.  The idea was initiated by the Late King Mahendra in consultation. After the declaration of democracy in 2007 B.S., There were people establishing school to educate their children.</p>
+                        <p>After much planning and forethought, Mahadev Janata Primary School came into existence in 2016 B.S. The people of Harion specially late Teacher Mr. Bhim Bahadur Sindali and Mr. Babar Jung Thapa along with different social activist of that time had played vital role for establishing this school. The locals provided 3 bigha 17 kattha and 13 dhur the required land and the school was inaguarated by contemporary Bada Hakim “Government officer” Mr. Badri Bikram Thapa. The school was known as “Jhunjhi” School in those days.</p>
+                        <p>Teaching started in 2017 B.S. with one thatched roof building, with 30-35 students  and single teacher Mr. Bhim Bahadur Sindali. The location of school was changed and the building was reconstructed in 2032 B.S. The school was upgraded in 2034 B.S. in lower secondary level. The school sent its first SLC batch in 2047 B.S. with 47 students. Similarly, the higher secondary level was introduced in 2066 B.S. The school was selected as model school in 2074 B.S. by the government of Nepal. It had started teaching Technical education for plant science from 2076 B.S. The school has master plan to run the hostel the cafeteria and the classrooms. The construction of other buildings (hostels, classrooms, dinning hall, assembly hall, sports hall and staff quarters) are being under construction and has plan to complete it  by the end of 2082 B.S. Mr. Bhim Bahadur Sindali became the first Headmaster of Mahadev Janata School and Mr. Gopi Nath Kharel and Mr. Krishna Bahadur KC were the Nepali personel to be appointed as teachers.</p>
+                    </div>
+
+                    <div class="planning pt-5">
+                        <h5>Planning for school site</h5>
+                        <p>The first batch of students took the School Leaving Certificate Examination (the national exam that is taken at the end of class 10) in 2047 B.S. When 40 out of 41 students listed as passed and SLC holders in the Harion area. MJS School established itself as the icon of quality education.</p>
+                        <p>The growth of the school has never stopped. In 2065 B.S., the 10+2 program of the Higher Secondary Education Board of Nepal was introduced. The student population continued to rise till it reached near about three hundred in 2067 B.S.</p>
+                    </div>
+
+                    <div class="somekeys pt-5">
+                        <h5>Some of the key events in the history of Mahadev Janata Secondary School are:</h5>
+                        <ul class="pt-3">
+                            <li>Established in 2016 B.S.</li>
+                            <li>Teaching started in 2017 B.S.</li>
+                            <li>The first batch of students took SLC in 2047 B.S.</li>
+                            <li>In 2075 B.S, the school also started providing education in English Medium along with Nepali medium.</li>
+                            <li>Library, New Science lab and Computer lab are under construction.</li>
+                            <li>The Pre-primary block was introduced in 2076 B.S.</li>
+                            <li>Plant Science course (Diploma Level) was introduced in 2076 B.S.</li>
+                            <li>From beginning MJS School became a co-educational institution.</li>
+                            <li>M1 and M2 House, two hostels for boys and girls, are going to be added by the end of 2082 B.S.</li>
+                            <li>In 2017 B.S, the first management chair was late Mr. Punya Prashad Bhattrai</li>
+                            <li>In 2065 B.S. Falgun 7, on the occasion of the school’s Golden Jubilee Year the school introduced 10+2 program of the Higher Secondary Education Board.</li>
+                            <li>In 2077 B.S, the Library is introduced as LRC (Learning Resource Centre).</li>
+                            <li>There are around 1600 students along with 46 teaching and non-teaching staff’s.</li>
+                        </ul>
+                    </div>
+
+                    <div class="leadership pt-5">
+                        <h5>The following personnel have taken the leadership in the growth and shaping of Mahadev Janata Secondary School.</h5>
+                        <ul class="pt-3">
+                            <li>Late Punya Prasad Bhattarai</li>
+                            <li>Mr. Nain Bahadur KC</li>
+                            <li>Late Kulprasad Bhattarai</li>
+                            <li>Late Jit Bahadur Karki</li>
+                            <li>Late Madhab Prasad Ghimire</li>
+                            <li>Mr. Khadag Bahadur Karki</li>
+                            <li>Mr. Bidur Prasad Pyakurel</li>
+                            <li>Mr. Bal Mukund Khadka</li>
+                            <li>Mr. Shambhu Gurung</li>
+                            <li>Mr. Ghanshyam Maske</li>
+                            <li>Mr. Yagya Binod Dhungel.</li>
+                        </ul>
+                    </div>
+
+                    <div class="headmasters pt-5">
+                        <h5>The following Headmasters have taken the leadership in the growth and shaping of Mahadev Janata Secondary School.</h5>
+                        <ul class="pt-3">
+                            <li>Late Bhim Bahadur Sindali</li>
+                            <li>Buddhinath Das</li>
+                            <li>Krishna Prasad Bhattarai</li>
+                            <li>Krishna Bahadur Khadka</li>
+                            <li>Gobind Prasad Dhungel</li>
+                            <li>Debendra Bohora</li>
+                            <li>Pritishobha Mainali</li>
+                            <li>Narendra Kumar KC</li>
+                            <li>Kamdev Chaudhary</li>
+                            <li>Rajendra Thakur</li>
+                            <li>Rohini Prasad Khatiwada</li>
+                            <li>Utamraj Ghimire</li>
+                            <li>Ngamendra Prasad Ghimire</li>
+                            <li>Krishna Prasad Bhattarai</li>
+                            <li>Jay Shankar Singh</li>
+                        </ul>
+                    </div>
+
+                    <div class="table pt-5">
+                        <h5>The following personal have contributed the land to establish for the growth and shaping of Mahadev Janata Secondary School.</h5>
+                        <table id="table_id" class="table table-striped" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>S.N.</th>
+                                    <th>FOUNDING DONORS</th>
+                                    <th>AREA</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Late Rudra Bahadur Thapaliya</td>
+                                    <td>4-12-09</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Late Indra Prasad Mainali</td>
+                                    <td>3-17-13</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Late Sharda Shamsher Rana</td>
+                                    <td>0-11-05</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Late Shamsher Bahadur Bhandari</td>
+                                    <td>1-04-13</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Late Ram Charitra Sundi</td>
+                                    <td>0-19-18</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Late Mukhiya Punya Prasad Bhattarai</td>
+                                    <td>0-10-15</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Late Laghu Maya Maskey</td>
+                                    <td>0-10-12</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Late Singh Bahadur Ray</td>
+                                    <td>0-10-0</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>Late Baidnath Lal Karn</td>
+                                    <td>0-09-10</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>Late Jagat Bahadur Bhlon	</td>
+                                    <td>0-9-0</td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>Late Buddhiman Kusuwar</td>
+                                    <td>0-04-13</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="founding pt-5">
+                        <h5>The following were members of Founding Management Committee of Mahadev Janata Secondary School.</h5>
+                        <ol>
+                            <li>Late Mukhiya Punya Prasad Bhattarai (Chair)</li>
+                            <li>Babar Jung Thapa (Secretory)</li>
+                            <li>Late Baidnath Lal Karn (Fund Secretory)</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="spart">
+                        <form role="search" method="get" action="">
+                            <input type="search" placeholder="Search" class="field">
+                        </form>
+                        <p class="vacancy">Vacancy Announcement</p>
+                        <div class="">
+                            <p class="calendar ps-3">Calendar</p>
+                            <iframe src="https://www.hamropatro.com/widgets/calender-medium.php" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" style="border:none; overflow:hidden; width:295px; height:385px;" allowtransparency="true"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- history end -->
+    </div>
+
+    <!-- footer starts -->
+    <section class="container-fluid footer">
+        <div class="container">
+            <div class="row pt-5 pb-3">
+                <div class="col-lg-3">
+                    <div class="fpart">
+                        <img src="https://www.mjss.edu.np/wp-content/uploads/2020/08/nepali-logo.jpg" alt="" width="90%">
+                        <p>Mahadev Janata Model Secondary School, Harion Municipality-08, Sarlahi, is the government designated national school of Nepal. </p>
+                        <ul>
+                            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-google-plus-g"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="spart">
+                        <h5>Contact</h5>
+                        <ul>
+                            <li>Tel.: +977-046-530050</li>
+                            <li>Mail : mahadevjantahss@gmail.com</li>
+                        </ul>
+                        <ul>
+                            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-google-plus-g"></i></a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-3">
+                    <div class="tpart">
+                        <h5>Important Links</h5>
+                        <ul class="fa-ul ms-4">
+                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span><a href="#">Harion Municipality</a></li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span><a href="#">DEO Sarlahi</a></li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span><a href="#">Government Of Nepal</a></li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span><a href="#">E-Putakalya</a></li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span><a href="#">Employees Provident Fond</a></li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span><a href="#">Rastriya Kitab Khana</a></li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span><a href="#">Nagrik Lagani Kosh</a></li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span><a href="#">Center for Education & HRD</a></li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span><a href="#">Rastriya Pariksha Board</a></li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span><a href="#">CDC</a></li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span><a href="#">Notice</a></li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span><a href="#">Vacancy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="fopart">
+                        <h5>For Further Information</h5>
+                        <p>Mr. Giriraj Rana</p>
+                        <p>Mail : girirajrana2064@gmail.com</p>
+                        <p>Mobile No. : 9854041197</p>
+                        <ul>
+                            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-google-plus-g"></i></a></li>
+                        </ul>
+                        <p>Mr. Shyam Ghimire</p>
+                        <p>Mail : ghimiresym03@gmail.com</p>
+                        <p>Mobile No. : 9844107493</span></p>
+                        <ul>
+                            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-google-plus-g"></i></a></li>
+                        </ul>
+                        <h4>Designed & Supported</h4>
+                        <p>Mr. Dipendra Kumar Thakur</p>
+                        <p>Mail : 4udipenji@gmail.com</p>
+                        <p>Mobile No. : 9845677582</p>
+                        <ul>
+                            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-google-plus-g"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p>©2020. Mahadev Janata Model Secondary School All Rights Reserved.</p>
+                    </div>
+                    <div class="col-lg-6 text-end">
+                        <p>Powered by : Dipendra Kumar Thakur</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer ends -->
+
+    <div class="arrow">
+        <a href="#up"><button><i class="fa-solid fa-chevron-up"></i></button></a>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.js"></script>
+    <script src="js/javascript.js"></script>
+
+  </body>
+</html>
