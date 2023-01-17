@@ -1,0 +1,30 @@
+$brand : #004A89;
+
+@import 'header';
+@import 'nav';
+@import 'calender';
+@import 'footer';
+@import 'arrow';
+@import 'responsive';
+
+.notice
+{
+    h4 
+    {
+        color: $brand;
+        padding-bottom: 10px;
+    }
+    table 
+    {
+        line-height: 40px;
+        width: 100%;
+        thead 
+        {
+            background-color: #E9ECEF;
+        }
+        tr 
+        {
+            border: 2px solid #E9ECEF;
+        }
+    }
+}

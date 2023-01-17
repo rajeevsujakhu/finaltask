@@ -145,6 +145,43 @@
   display: none;
 }
 
+.spart {
+  padding-left: 20px;
+}
+
+.spart .field {
+  width: 74%;
+  font-size: 14px;
+  line-height: 1.8;
+  padding: 6px 12px;
+  vertical-align: middle;
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.spart .vacancy {
+  color: #004A89;
+  padding: 16px 0;
+}
+
+.spart .calendar {
+  border-left: 5px solid #004A89;
+}
+
+.spart table {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  line-height: 40px;
+  text-align: center;
+}
+
+.spart table thead {
+  padding: 10px 0;
+  border-bottom: 0.3px solid #888585;
+}
+
 .footer {
   background-color: #004A89;
   color: white;

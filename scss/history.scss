@@ -4,6 +4,7 @@ $brand : #004A89;
 
 @import 'header';
 @import 'nav';
+@import 'calender';
 @import 'footer';
 @import 'arrow';
 @import 'responsive';
@@ -61,43 +62,6 @@ $brand : #004A89;
     h5 
     {
         color: $brand;
-    }
-    .spart
-    {
-        padding-left: 20px;
-        .field
-        {
-            width: 74%;
-            font-size: 14px;
-            line-height: 1.8;
-            padding: 6px 12px;
-            vertical-align: middle;
-            background-color: transparent;
-            color: #333;
-            border: 1px solid #ddd;
-            border-radius: 3px;
-        }
-        .vacancy
-        {
-            color: $brand;
-            padding: 16px 0;
-        }
-        .calendar
-        {
-            border-left: 5px solid $brand;
-        }
-        table
-        {
-            border-top: 2px solid black;
-            border-bottom: 2px solid black;
-            line-height: 40px;
-            text-align: center;
-            thead
-            {
-                padding: 10px 0;
-                border-bottom: 0.3px solid rgb(136, 133, 133);
-            }
-        }
     }
 }
 
