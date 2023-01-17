@@ -1,0 +1,16 @@
+.arrow
+{
+    z-index: 999;
+    display: none;
+    button
+    {
+        background-color: #73777F;
+        border-radius: 2px;
+        padding: 10px 14px;
+        border: 0;
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+        color: white;
+    }
+}

@@ -41,10 +41,7 @@
 
 .navbar {
   background-color: #004A89;
-}
-
-.navbar nav {
-  z-index: 99999;
+  z-index: 999999;
 }
 
 .navbar nav .mainnav {
@@ -148,75 +145,6 @@
   display: none;
 }
 
-.headadmin {
-  padding-top: 40px;
-  padding-bottom: 70px;
-}
-
-.headadmin .admin img {
-  width: 40px;
-  border-radius: 50%;
-}
-
-.headadmin .admin table {
-  margin-top: 30px;
-  width: 100%;
-}
-
-.headadmin .admin table tbody {
-  line-height: 60px;
-}
-
-.headadmin .col-lg-8 {
-  padding-right: 20px;
-  border-right: 1px solid black;
-}
-
-.headadmin .col-lg-4 {
-  padding-left: 30px;
-}
-
-.headadmin h4 {
-  color: #004A89;
-}
-
-.headadmin .spart {
-  padding-left: 20px;
-}
-
-.headadmin .spart .field {
-  width: 74%;
-  font-size: 14px;
-  line-height: 1.8;
-  padding: 6px 12px;
-  vertical-align: middle;
-  background-color: transparent;
-  color: #333;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-}
-
-.headadmin .spart .vacancy {
-  color: #004A89;
-  padding: 16px 0;
-}
-
-.headadmin .spart .calendar {
-  border-left: 5px solid #004A89;
-}
-
-.headadmin .spart table {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  line-height: 40px;
-  text-align: center;
-}
-
-.headadmin .spart table thead {
-  padding: 10px 0;
-  border-bottom: 0.3px solid #888585;
-}
-
 .footer {
   background-color: #004A89;
   color: white;
@@ -316,9 +244,6 @@
   .navbar nav .mainnav .navitems a {
     padding: 0 39px;
   }
-  .headhistory .col-lg-4 {
-    padding-left: 20px;
-  }
 }
 
 @media (max-width: 1024px) {
@@ -376,12 +301,6 @@
   nav #click:checked ~ .checkbtn1 {
     left: 550px;
     top: -330px;
-  }
-  .headhistory .col-lg-8 {
-    border: none;
-  }
-  .headhistory .col-lg-4 {
-    padding-left: 10px;
   }
   .footer .fpart img {
     width: 40%;
@@ -462,9 +381,6 @@
     bottom: 40px;
     right: 40px;
   }
-  .headhistory {
-    padding-left: 10px;
-  }
 }
 
 @media (max-width: 480px) {
@@ -527,8 +443,101 @@
     left: 250px !important;
     top: -250px !important;
   }
-  .headhistory .spart {
+}
+
+.headadmin {
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+
+.headadmin .admin img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.headadmin .admin table {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.headadmin .admin table tbody {
+  line-height: 60px;
+}
+
+.headadmin .col-lg-8 {
+  padding-right: 20px;
+  border-right: 1px solid black;
+}
+
+.headadmin .col-lg-4 {
+  padding-left: 30px;
+}
+
+.headadmin h4 {
+  color: #004A89;
+}
+
+.headadmin .spart {
+  padding-left: 20px;
+}
+
+.headadmin .spart .field {
+  width: 74%;
+  font-size: 14px;
+  line-height: 1.8;
+  padding: 6px 12px;
+  vertical-align: middle;
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.headadmin .spart .vacancy {
+  color: #004A89;
+  padding: 16px 0;
+}
+
+.headadmin .spart .calendar {
+  border-left: 5px solid #004A89;
+}
+
+.headadmin .spart table {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  line-height: 40px;
+  text-align: center;
+}
+
+.headadmin .spart table thead {
+  padding: 10px 0;
+  border-bottom: 0.3px solid #888585;
+}
+
+@media (max-width: 1200px) {
+  .headadmin .col-lg-4 {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .headadmin .col-lg-8 {
+    border: none;
+  }
+  .headadmin .col-lg-4 {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .headadmin {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .headadmin .spart {
     padding-left: 0;
   }
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=administration.css.map */

@@ -1,5 +1,11 @@
 $brand : #004A89;
 
+
+@import 'nav';
+@import 'footer';
+@import 'arrow';
+@import 'responsive';
+
 body
 {
     background-color: #EEEEEE;
@@ -54,124 +60,6 @@ body
         {
             background-color: #FFFFFF;
             border: none;
-        }
-    }
-}
-
-.navbar 
-{
-    background-color: $brand;
-    z-index: 99999;
-    nav
-    {
-        .mainnav 
-        {
-            padding: 0;
-            margin: 0;
-            .navitems
-            {
-                list-style: none;
-                display: inline-block;
-                position: relative;
-                a 
-                {
-                    display: block;
-                    padding: 0 15px;
-                    color: white;
-                    text-decoration: none;
-                    line-height: 34px;
-                    transition: 0.3s;
-                    &:hover
-                    {
-                        color: #73777F;
-                    }
-                }
-                .fdown
-                {
-                    li 
-                    {
-                        width: 310px;
-                    }
-                }
-                &:hover
-                {
-                    .dropdown 
-                    {
-                        display: block;
-                    }
-                }
-            }
-            .dropdown
-            {
-                position: absolute;
-                list-style: none;
-                top: 30px;
-                margin: 0;
-                padding: 0;
-                background-color: $brand;
-                display: none;
-                li 
-                {
-                    width: 200px;
-                    display: list-item;
-                    a 
-                    {
-                        line-height: 35px;
-                    }
-                }
-                .navitem2 
-                {
-                    position: relative;
-                    &:hover
-                    {
-                        .dropdown2
-                        {
-                            display: block;
-                        }
-                    }
-                }
-                .dropdown2
-                {
-                    margin: 0;
-                    padding: 0;
-                    display: none;
-                    position: absolute;
-                        top: -5px;
-                        left: 200px;
-                    li 
-                    {
-                        list-style: none;
-                        
-                        background-color: $brand;
-                        a 
-                        {
-                            line-height: 40px;
-                        }
-                    }
-                }
-            }
-        }
-        .checkbtn , .checkbtn1
-        {
-            font-size: 30px;
-            color: white;
-            padding-top: 5px;
-            cursor: pointer;
-            display: none;
-        }
-        .checkbtn1
-        {
-            display: block;
-            height: 10px;
-            position: relative;
-            left: -250px;
-            top: -250px;
-            z-index: 9;
-            transition: 0.4s;
-        }
-        #click 
-        {
-            display: none;
         }
     }
 }
@@ -428,90 +316,6 @@ body
     }
 }
 
-.footer
-{
-    background-color: $brand;
-    color: white;
-    .fpart 
-    {
-        text-align: center;
-        ul 
-        {
-            padding-left: 0;
-            li
-            {
-                list-style: none;
-                display: inline;
-                a 
-                {
-                    padding-left: 10px;
-                    color: white;
-                }
-            }
-        }
-        p 
-        {
-            padding: 10px 0;
-        }
-    }
-    .spart
-    {
-        ul 
-        {
-            padding-left: 0;
-            li 
-            {
-                list-style: none;
-                display: inline; 
-                a
-                {
-                    color: white;
-                    padding-left: 10px;
-                }
-            }
-        }
-    }
-    .tpart
-    {
-        ul 
-        {
-            li 
-            {
-                line-height: 34px;
-                a 
-                {
-                    color: white;
-                    text-decoration: none;
-                }
-            }
-        }
-    }
-    .fopart
-    {
-        line-height: 16px;
-        ul 
-        {
-            li 
-            {
-                display: inline;
-                padding-left: 10px;
-                a 
-                {
-                    color: white;
-                }
-            }
-        }
-    }
-    .copyright
-    {
-        border-top: 0.3px solid black;
-        padding: 20px 0;
-        p 
-        {
-            margin: 0;
-        }
-    }
-}
 
 .copyright
 {
@@ -543,10 +347,6 @@ body
 
 @media(max-width:1200px)
 {
-    .navbar nav .mainnav .navitems a
-    {
-        padding: 0 39px;
-    }
     #click:checked ~ .mainnav
         {
             left: 0;
@@ -560,156 +360,17 @@ body
 
 @media(max-width:1024px)
 {
-    .navbar nav .mainnav .navitems a
-    {
-        padding: 0 12px;
-        font-size: 18px !important;
-        line-height: 38px !important;
-    }
-    nav 
-    {
-        .mainnav 
-        {
-            position: fixed;
-            width: 100%;
-            top: 0px;
-            left: -100%;
-            height: 100vh;
-            text-align: center;
-            background-color: $brand;
-            transition: all .5s;
-            .navitems
-            {
-                display: block !important;
-                border-bottom: 1px solid rgba(165, 164, 164, 0.3);
-                .dropdown
-                {
-                    position: relative;
-                    width: 100%;
-                    top: 0px;
-                    left: 320px;
-                    text-align: left;
-                    .dropdown2 
-                    {
-                        position: relative;
-                        width: 100%;
-                        left: 10px;
-                    }
-                }
-            }
-            a 
-            {
-                line-height: 34px !important;
-            }
-        }
-        .checkbtn 
-        {
-            display: block !important;
-            position: relative;
-            left: 650px;
-        }
-        
-        #click:checked ~ .mainnav
-        {
-            left: 0;
-        }
-        #click:checked ~ .checkbtn1
-        {
-            left: 550px;
-            top: -200px;
-        }
-    }
-    .footer 
-    {
-        .fpart 
-        {
-            img 
-            {
-                width: 40%;
-            }
-            p 
-            {
-                padding-top: 20px;
-            }
-        }
-        .spart , .fopart
-        {
-            text-align: center;
-            padding-top: 20px;
-        }
-        .tpart
-        {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-top: 20px;
-        }
+    nav #click:checked ~ .checkbtn1 {
+        left: 600px;
+        top: -143px;
     }
 }
 
 @media(max-width:768px)
 {
-    .dropdown
-    {
-        position: relative;
-        width: 100%;
-        top: 0px;
-        left: 280px !important;
-        text-align: left;
-        .dropdown2 
-        {
-            position: relative;
-            width: 100%;
-            left: 10px;
-        }
-    }
-    .checkbtn 
-    {
-        display: block !important;
-        position: relative;
-        left: 460px !important;
-    }
-    #click:checked ~ .checkbtn1
-    {
+    #click:checked ~ .checkbtn1 {
         left: 400px !important;
         top: -220px !important;
-    }
-}
-
-@media(max-width:600px)
-{
-    .dropdown
-    {
-        position: relative;
-        width: 100%;
-        top: 0px;
-        left: 200px !important;
-        text-align: left;
-        .dropdown2 
-        {
-            position: relative;
-            width: 100%;
-            left: 10px;
-        }
-    }
-    .checkbtn 
-    {
-        display: block !important;
-        position: relative;
-        left: 400px !important;
-    }
-    #click:checked ~ .checkbtn1
-    {
-        left: 400px !important;
-        top: -220px !important;
-    }
-    .arrow 
-    {
-        button 
-        {
-            bottom: 40px;
-            right: 40px;
-        }
     }
 }
 
@@ -727,53 +388,8 @@ body
     }
     nav 
     {
-        .dropdown
-        {
-            position: relative;
-            width: 100%;
-            top: 0px;
-            left: 0px !important;
-            text-align: left;
-            .dropdown2 
-            {
-                position: relative;
-                width: 100%;
-                left: 10px !important;
-            }
-        }
-        .mainnav 
-        {
-            position: fixed;
-            width: 100%;
-            top: 0px;
-            left: -100%;
-            height: 100vh;
-            text-align: center;
-            background-color: $brand;
-            transition: all .5s;
-            .navitems
-            {
-                display: block !important;
-            }
-            a 
-            {
-                line-height: 34px !important;
-            }
-        }
-        .checkbtn 
-        {
-            display: block !important;
-            position: relative;
+        #click:checked ~ .checkbtn1 {
             left: 300px !important;
-        }
-        
-        #click:checked ~ .mainnav
-        {
-            left: 0;
-        }
-        #click:checked ~ .checkbtn1
-        {
-            left: 280px !important;
             top: -190px !important;
         }
     }

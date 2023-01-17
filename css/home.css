@@ -1,59 +1,6 @@
-body {
-  background-color: #EEEEEE;
-}
-
-.container {
-  background-color: #FFFFFF;
-  -webkit-box-shadow: 0px 0px 22px -21px;
-          box-shadow: 0px 0px 22px -21px;
-  padding: 10px 20px;
-}
-
-.header {
-  padding-bottom: 10px;
-}
-
-.header .hflex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.header .hflex img {
-  width: 60px;
-}
-
-.header .hflex ul {
-  padding-left: 10px;
-}
-
-.header ul {
-  list-style: none;
-  padding-top: 15px;
-}
-
-.header ul li {
-  display: inline-block;
-  padding-left: 5px;
-}
-
-.header .lang_translator {
-  text-align: right;
-}
-
-.header .lang_translator ul li a {
-  text-decoration: none;
-  color: black;
-}
-
-.header .lang_translator button {
-  background-color: #FFFFFF;
-  border: none;
-}
-
 .navbar {
   background-color: #004A89;
-  z-index: 99999;
+  z-index: 999999;
 }
 
 .navbar nav .mainnav {
@@ -155,6 +102,359 @@ body {
 
 .navbar nav #click {
   display: none;
+}
+
+.footer {
+  background-color: #004A89;
+  color: white;
+}
+
+.footer .fpart {
+  text-align: center;
+}
+
+.footer .fpart ul {
+  padding-left: 0;
+}
+
+.footer .fpart ul li {
+  list-style: none;
+  display: inline;
+}
+
+.footer .fpart ul li a {
+  padding-left: 10px;
+  color: white;
+}
+
+.footer .fpart p {
+  padding: 10px 0;
+}
+
+.footer .spart ul {
+  padding-left: 0;
+}
+
+.footer .spart ul li {
+  list-style: none;
+  display: inline;
+}
+
+.footer .spart ul li a {
+  color: white;
+  padding-left: 10px;
+}
+
+.footer .tpart ul li {
+  line-height: 34px;
+}
+
+.footer .tpart ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer .fopart {
+  line-height: 16px;
+}
+
+.footer .fopart ul li {
+  display: inline;
+  padding-left: 10px;
+}
+
+.footer .fopart ul li a {
+  color: white;
+}
+
+.footer .copyright {
+  border-top: 0.3px solid black;
+  padding: 20px 0;
+}
+
+.footer .copyright p {
+  margin: 0;
+}
+
+.arrow {
+  z-index: 999;
+  display: none;
+}
+
+.arrow button {
+  background-color: #73777F;
+  border-radius: 2px;
+  padding: 10px 14px;
+  border: 0;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  color: white;
+}
+
+@media (max-width: 1400px) {
+  .navbar nav .mainnav .navitems a {
+    padding: 0 12px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar nav .mainnav .navitems a {
+    padding: 0 39px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .language {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar nav .mainnav .navitems a {
+    padding: 0 12px;
+    font-size: 18px !important;
+    line-height: 38px !important;
+  }
+  nav .mainnav {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: -100%;
+    height: 100vh;
+    text-align: center;
+    background-color: #004A89;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  nav .mainnav .navitems {
+    display: block !important;
+    border-bottom: 1px solid rgba(165, 164, 164, 0.3);
+  }
+  nav .mainnav .navitems .dropdown {
+    position: relative;
+    width: 100%;
+    top: 0px;
+    left: 320px;
+    text-align: left;
+  }
+  nav .mainnav .navitems .dropdown .dropdown2 {
+    position: relative;
+    width: 100%;
+    left: 10px;
+  }
+  nav .mainnav a {
+    line-height: 34px !important;
+  }
+  nav .checkbtn {
+    display: block !important;
+    position: relative;
+    left: 650px;
+  }
+  nav #click:checked ~ .mainnav {
+    left: 0;
+  }
+  nav #click:checked ~ .checkbtn1 {
+    left: 550px;
+    top: -330px;
+  }
+  .footer .fpart img {
+    width: 40%;
+  }
+  .footer .fpart p {
+    padding-top: 20px;
+  }
+  .footer .spart, .footer .fopart {
+    text-align: center;
+    padding-top: 20px;
+  }
+  .footer .tpart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dropdown {
+    position: relative;
+    width: 100%;
+    top: 0px;
+    left: 280px !important;
+    text-align: left;
+  }
+  .dropdown .dropdown2 {
+    position: relative;
+    width: 100%;
+    left: 10px;
+  }
+  .checkbtn {
+    display: block !important;
+    position: relative;
+    left: 460px !important;
+  }
+  #click:checked ~ .checkbtn1 {
+    left: 400px !important;
+    top: -280px !important;
+  }
+  .arrow button {
+    bottom: 40px;
+    right: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .dropdown {
+    position: relative;
+    width: 100%;
+    top: 0px;
+    left: 200px !important;
+    text-align: left;
+  }
+  .dropdown .dropdown2 {
+    position: relative;
+    width: 100%;
+    left: 10px;
+  }
+  .checkbtn {
+    display: block !important;
+    position: relative;
+    left: 400px !important;
+  }
+  #click:checked ~ .checkbtn1 {
+    left: 400px !important;
+    top: -280px !important;
+  }
+  .arrow button {
+    bottom: 40px;
+    right: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .head .socials {
+    text-align: center;
+  }
+  .head .socials li {
+    padding: 0 10px;
+  }
+  .head .abouts {
+    font-size: 14px;
+    text-align: center;
+  }
+  .head .language {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  nav .dropdown {
+    position: relative;
+    width: 100%;
+    top: 0px;
+    left: 0px !important;
+    text-align: left;
+  }
+  nav .dropdown .dropdown2 {
+    position: relative;
+    width: 100%;
+    left: 10px !important;
+  }
+  nav .mainnav {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: -100%;
+    height: 100vh;
+    text-align: center;
+    background-color: #004A89;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  nav .mainnav .navitems {
+    display: block !important;
+  }
+  nav .mainnav a {
+    line-height: 34px !important;
+  }
+  nav .checkbtn {
+    display: block !important;
+    position: relative;
+    left: 300px !important;
+  }
+  nav #click:checked ~ .mainnav {
+    left: 0;
+  }
+  nav #click:checked ~ .checkbtn1 {
+    left: 250px !important;
+    top: -250px !important;
+  }
+}
+
+body {
+  background-color: #EEEEEE;
+}
+
+.container {
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 22px -21px;
+          box-shadow: 0px 0px 22px -21px;
+  padding: 10px 20px;
+}
+
+.header {
+  padding-bottom: 10px;
+}
+
+.header .hflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .hflex img {
+  width: 60px;
+}
+
+.header .hflex ul {
+  padding-left: 10px;
+}
+
+.header ul {
+  list-style: none;
+  padding-top: 15px;
+}
+
+.header ul li {
+  display: inline-block;
+  padding-left: 5px;
+}
+
+.header .lang_translator {
+  text-align: right;
+}
+
+.header .lang_translator ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.header .lang_translator button {
+  background-color: #FFFFFF;
+  border: none;
 }
 
 .banner {
@@ -404,78 +704,6 @@ body {
   color: black;
 }
 
-.footer {
-  background-color: #004A89;
-  color: white;
-}
-
-.footer .fpart {
-  text-align: center;
-}
-
-.footer .fpart ul {
-  padding-left: 0;
-}
-
-.footer .fpart ul li {
-  list-style: none;
-  display: inline;
-}
-
-.footer .fpart ul li a {
-  padding-left: 10px;
-  color: white;
-}
-
-.footer .fpart p {
-  padding: 10px 0;
-}
-
-.footer .spart ul {
-  padding-left: 0;
-}
-
-.footer .spart ul li {
-  list-style: none;
-  display: inline;
-}
-
-.footer .spart ul li a {
-  color: white;
-  padding-left: 10px;
-}
-
-.footer .tpart ul li {
-  line-height: 34px;
-}
-
-.footer .tpart ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-.footer .fopart {
-  line-height: 16px;
-}
-
-.footer .fopart ul li {
-  display: inline;
-  padding-left: 10px;
-}
-
-.footer .fopart ul li a {
-  color: white;
-}
-
-.footer .copyright {
-  border-top: 0.3px solid black;
-  padding: 20px 0;
-}
-
-.footer .copyright p {
-  margin: 0;
-}
-
 .copyright {
   padding: 5px 0;
 }
@@ -506,9 +734,6 @@ body {
 }
 
 @media (max-width: 1200px) {
-  .navbar nav .mainnav .navitems a {
-    padding: 0 39px;
-  }
   #click:checked ~ .mainnav {
     left: 0;
   }
@@ -519,127 +744,16 @@ body {
 }
 
 @media (max-width: 1024px) {
-  .navbar nav .mainnav .navitems a {
-    padding: 0 12px;
-    font-size: 18px !important;
-    line-height: 38px !important;
-  }
-  nav .mainnav {
-    position: fixed;
-    width: 100%;
-    top: 0px;
-    left: -100%;
-    height: 100vh;
-    text-align: center;
-    background-color: #004A89;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-  }
-  nav .mainnav .navitems {
-    display: block !important;
-    border-bottom: 1px solid rgba(165, 164, 164, 0.3);
-  }
-  nav .mainnav .navitems .dropdown {
-    position: relative;
-    width: 100%;
-    top: 0px;
-    left: 320px;
-    text-align: left;
-  }
-  nav .mainnav .navitems .dropdown .dropdown2 {
-    position: relative;
-    width: 100%;
-    left: 10px;
-  }
-  nav .mainnav a {
-    line-height: 34px !important;
-  }
-  nav .checkbtn {
-    display: block !important;
-    position: relative;
-    left: 650px;
-  }
-  nav #click:checked ~ .mainnav {
-    left: 0;
-  }
   nav #click:checked ~ .checkbtn1 {
-    left: 550px;
-    top: -200px;
-  }
-  .footer .fpart img {
-    width: 40%;
-  }
-  .footer .fpart p {
-    padding-top: 20px;
-  }
-  .footer .spart, .footer .fopart {
-    text-align: center;
-    padding-top: 20px;
-  }
-  .footer .tpart {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-top: 20px;
+    left: 600px;
+    top: -143px;
   }
 }
 
 @media (max-width: 768px) {
-  .dropdown {
-    position: relative;
-    width: 100%;
-    top: 0px;
-    left: 280px !important;
-    text-align: left;
-  }
-  .dropdown .dropdown2 {
-    position: relative;
-    width: 100%;
-    left: 10px;
-  }
-  .checkbtn {
-    display: block !important;
-    position: relative;
-    left: 460px !important;
-  }
   #click:checked ~ .checkbtn1 {
     left: 400px !important;
     top: -220px !important;
-  }
-}
-
-@media (max-width: 600px) {
-  .dropdown {
-    position: relative;
-    width: 100%;
-    top: 0px;
-    left: 200px !important;
-    text-align: left;
-  }
-  .dropdown .dropdown2 {
-    position: relative;
-    width: 100%;
-    left: 10px;
-  }
-  .checkbtn {
-    display: block !important;
-    position: relative;
-    left: 400px !important;
-  }
-  #click:checked ~ .checkbtn1 {
-    left: 400px !important;
-    top: -220px !important;
-  }
-  .arrow button {
-    bottom: 40px;
-    right: 40px;
   }
 }
 
@@ -647,45 +761,8 @@ body {
   .header .hflex ul {
     padding-top: 0px;
   }
-  nav .dropdown {
-    position: relative;
-    width: 100%;
-    top: 0px;
-    left: 0px !important;
-    text-align: left;
-  }
-  nav .dropdown .dropdown2 {
-    position: relative;
-    width: 100%;
-    left: 10px !important;
-  }
-  nav .mainnav {
-    position: fixed;
-    width: 100%;
-    top: 0px;
-    left: -100%;
-    height: 100vh;
-    text-align: center;
-    background-color: #004A89;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-  }
-  nav .mainnav .navitems {
-    display: block !important;
-  }
-  nav .mainnav a {
-    line-height: 34px !important;
-  }
-  nav .checkbtn {
-    display: block !important;
-    position: relative;
-    left: 300px !important;
-  }
-  nav #click:checked ~ .mainnav {
-    left: 0;
-  }
   nav #click:checked ~ .checkbtn1 {
-    left: 280px !important;
+    left: 300px !important;
     top: -190px !important;
   }
   .lang_translator ul {
@@ -723,4 +800,4 @@ body {
     text-align: end;
   }
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=home.css.map */

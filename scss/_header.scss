@@ -1,0 +1,45 @@
+.head
+{
+    text-align: center;
+    background-color: #D6F0FF;
+    .header 
+    {
+        .abouts
+        {
+            padding-top: 15px;
+        }
+        .lswitch
+        {
+            display: flex;
+            padding-top: 15px;
+            p 
+            {
+                padding-right: 5px;
+                margin: 0;
+            }
+        }
+        .logo
+        {
+            img 
+            {
+                width: 100%;
+            }
+        }
+        ul 
+        {
+            padding-left: 0;
+            margin: 0;
+            list-style: none;
+            li 
+            {
+                display: inline;
+                padding-left: 12px;
+                color: #2D3171;
+                &:hover
+                {
+                    color: #4054B2;
+                }
+            }
+        }
+    }
+}

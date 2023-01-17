@@ -1,0 +1,84 @@
+.footer
+{
+    background-color: $brand;
+    color: white;
+    .fpart 
+    {
+        text-align: center;
+        ul 
+        {
+            padding-left: 0;
+            li
+            {
+                list-style: none;
+                display: inline;
+                a 
+                {
+                    padding-left: 10px;
+                    color: white;
+                }
+            }
+        }
+        p 
+        {
+            padding: 10px 0;
+        }
+    }
+    .spart
+    {
+        ul 
+        {
+            padding-left: 0;
+            li 
+            {
+                list-style: none;
+                display: inline; 
+                a
+                {
+                    color: white;
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+    .tpart
+    {
+        ul 
+        {
+            li 
+            {
+                line-height: 34px;
+                a 
+                {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .fopart
+    {
+        line-height: 16px;
+        ul 
+        {
+            li 
+            {
+                display: inline;
+                padding-left: 10px;
+                a 
+                {
+                    color: white;
+                }
+            }
+        }
+    }
+    .copyright
+    {
+        border-top: 0.3px solid black;
+        padding: 20px 0;
+        p 
+        {
+            margin: 0;
+        }
+    }
+}

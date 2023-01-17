@@ -34,3 +34,14 @@ $(document).ready(function(){
     function enableScroll() {
         window.onscroll = function() {};
     }
+
+    $(window).scroll(function(){
+        if($(this).scrollTop()>100)
+        {
+        $(".arrow").show()
+        }
+        else
+        {
+            $(".arrow").hide()
+        }
+    })

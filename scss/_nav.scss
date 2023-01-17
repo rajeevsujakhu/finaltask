@@ -1,0 +1,117 @@
+.navbar 
+{
+    background-color: $brand;
+    z-index: 999999;
+    nav
+    {
+        .mainnav 
+        {
+            padding: 0;
+            margin: 0;
+            .navitems
+            {
+                list-style: none;
+                display: inline-block;
+                position: relative;
+                a 
+                {
+                    display: block;
+                    padding: 0 15px;
+                    color: white;
+                    text-decoration: none;
+                    line-height: 34px;
+                    transition: 0.3s;
+                    &:hover
+                    {
+                        color: #73777F;
+                    }
+                }
+                .fdown
+                {
+                    li 
+                    {
+                        width: 310px;
+                    }
+                }
+                &:hover
+                {
+                    .dropdown 
+                    {
+                        display: block;
+                    }
+                }
+            }
+            .dropdown
+            {
+                position: absolute;
+                list-style: none;
+                top: 30px;
+                margin: 0;
+                padding: 0;
+                background-color: $brand;
+                display: none;
+                li 
+                {
+                    width: 200px;
+                    display: list-item;
+                    a 
+                    {
+                        line-height: 35px;
+                    }
+                }
+                .navitem2 
+                {
+                    position: relative;
+                    &:hover
+                    {
+                        .dropdown2
+                        {
+                            display: block;
+                        }
+                    }
+                }
+                .dropdown2
+                {
+                    margin: 0;
+                    padding: 0;
+                    display: none;
+                    position: absolute;
+                        top: -5px;
+                        left: 200px;
+                    li 
+                    {
+                        list-style: none;
+                        
+                        background-color: $brand;
+                        a 
+                        {
+                            line-height: 40px;
+                        }
+                    }
+                }
+            }
+        }
+        .checkbtn , .checkbtn1
+        {
+            font-size: 30px;
+            color: white;
+            padding-top: 5px;
+            cursor: pointer;
+            display: none;
+        }
+        .checkbtn1
+        {
+            display: block;
+            height: 10px;
+            position: relative;
+            left: -250px;
+            top: -250px;
+            z-index: 9;
+            transition: 0.4s;
+        }
+        #click 
+        {
+            display: none;
+        }
+    }
+}
