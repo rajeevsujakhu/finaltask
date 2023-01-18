@@ -1,0 +1,29 @@
+$brand : #004A89;
+
+@import 'header';
+@import 'nav';
+@import 'calender';
+@import 'footer';
+@import 'arrow';
+@import 'responsive';
+
+.headarticle
+{
+    .article 
+    {
+        h4 
+        {
+            color: $brand;
+        }
+        .img 
+        {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        p 
+        {
+            text-align: justify;
+        }
+    }
+}
