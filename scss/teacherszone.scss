@@ -1,0 +1,27 @@
+$brand : #004A89;
+
+@import 'header';
+@import 'nav';
+@import 'calender';
+@import 'footer';
+@import 'arrow';
+@import 'responsive';
+
+.article
+{
+    box-shadow: 0px 0px 22px -15px;
+    padding: 10px ;
+    border-radius: 5px;
+    span , h4
+    {
+        color: $brand;
+    }
+    .view 
+    {
+        font-size: 12px;
+    }
+    p 
+    {
+        margin-bottom: 0;
+    }
+}

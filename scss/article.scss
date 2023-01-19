@@ -11,19 +11,122 @@ $brand : #004A89;
 {
     .article 
     {
+        border: 1px solid #E5E8F3;
+        padding: 10px 20px;
+        border-radius: 10px;
         h4 
         {
             color: $brand;
+            padding-bottom: 20px;
+        }
+        .view
+        {
+            color: gray;
+        }
+        span 
+        {
+            color: $brand;
+        }
+        img 
+        {
+            width: 60%;
         }
         .img 
         {
             display: flex;
             justify-content: center;
-            padding: 10px 0;
         }
         p 
         {
             text-align: justify;
         }
+    }
+    .col-lg-4
+    {
+        padding-top: 0 !important;
+    }
+    .spart 
+    {
+        border: 1px solid #E5E8F3;
+        padding: 20px 20px 10px 40px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        .field 
+        {
+            width: 85% !important;
+        }
+    }
+    .tpart 
+    {
+        border: 1px solid #E5E8F3;
+        padding: 20px 20px 10px 40px;
+        border-radius: 10px;
+        h5 
+        {
+            color: $brand;
+        }
+        .img 
+        {
+            img 
+            {
+                width: 80px;
+                border-radius: 5px;
+            }   
+        }
+        p 
+        {
+            margin-bottom: 0;
+        }
+        .date 
+        {
+            color: gray;
+        }
+    }
+}
+.comments 
+{
+    border: 1px solid #E5E8F3;
+        padding: 20px 20px 20px 50px;
+        border-radius: 10px;
+    h4 
+    {
+        color: $brand;
+    }
+    .col-2 
+    {
+        width: 100px;
+    }
+    img
+    {
+        width: 80px;
+        border-radius: 50%;
+    }
+    .date 
+    {
+        color: $brand;
+        margin-bottom: 5px;
+    }
+    .comment 
+    {
+        padding: 10px 20px;
+        border: 1px solid#E5E8F3;
+        width: 100%;
+        border-radius: 5px;
+    }
+    .message 
+    {
+        padding: 20px 20px 60px 20px;
+        border: 1px solid#E5E8F3;
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    button 
+    {
+        padding: 15px 40px;
+        border: none;
+        border-radius: 5px;
+        background-color: $brand;
+        color: white;
     }
 }

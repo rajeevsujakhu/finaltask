@@ -482,124 +482,22 @@
   }
 }
 
-.headarticle .article {
-  border: 1px solid #E5E8F3;
-  padding: 10px 20px;
-  border-radius: 10px;
-}
-
-.headarticle .article h4 {
-  color: #004A89;
-  padding-bottom: 20px;
-}
-
-.headarticle .article .view {
-  color: gray;
-}
-
-.headarticle .article span {
-  color: #004A89;
-}
-
-.headarticle .article img {
-  width: 60%;
-}
-
-.headarticle .article .img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.headarticle .article p {
-  text-align: justify;
-}
-
-.headarticle .col-lg-4 {
-  padding-top: 0 !important;
-}
-
-.headarticle .spart {
-  border: 1px solid #E5E8F3;
-  padding: 20px 20px 10px 40px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-.headarticle .spart .field {
-  width: 85% !important;
-}
-
-.headarticle .tpart {
-  border: 1px solid #E5E8F3;
-  padding: 20px 20px 10px 40px;
-  border-radius: 10px;
-}
-
-.headarticle .tpart h5 {
-  color: #004A89;
-}
-
-.headarticle .tpart .img img {
-  width: 80px;
+.article {
+  -webkit-box-shadow: 0px 0px 22px -15px;
+          box-shadow: 0px 0px 22px -15px;
+  padding: 10px;
   border-radius: 5px;
 }
 
-.headarticle .tpart p {
+.article span, .article h4 {
+  color: #004A89;
+}
+
+.article .view {
+  font-size: 12px;
+}
+
+.article p {
   margin-bottom: 0;
 }
-
-.headarticle .tpart .date {
-  color: gray;
-}
-
-.comments {
-  border: 1px solid #E5E8F3;
-  padding: 20px 20px 20px 50px;
-  border-radius: 10px;
-}
-
-.comments h4 {
-  color: #004A89;
-}
-
-.comments .col-2 {
-  width: 100px;
-}
-
-.comments img {
-  width: 80px;
-  border-radius: 50%;
-}
-
-.comments .date {
-  color: #004A89;
-  margin-bottom: 5px;
-}
-
-.comments .comment {
-  padding: 10px 20px;
-  border: 1px solid #E5E8F3;
-  width: 100%;
-  border-radius: 5px;
-}
-
-.comments .message {
-  padding: 20px 20px 60px 20px;
-  border: 1px solid #E5E8F3;
-  width: 100%;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-.comments button {
-  padding: 15px 40px;
-  border: none;
-  border-radius: 5px;
-  background-color: #004A89;
-  color: white;
-}
-/*# sourceMappingURL=article.css.map */
+/*# sourceMappingURL=teacherszone.css.map */
