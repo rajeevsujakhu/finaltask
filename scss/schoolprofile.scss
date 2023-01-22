@@ -1,0 +1,31 @@
+$brand : #004A89;
+
+@import 'header';
+@import 'nav';
+@import 'calender';
+@import 'footer';
+@import 'arrow';
+@import 'responsive';
+
+.headprofile
+{
+    .profile 
+    {
+        padding-right: 20px;
+        border-right: 1px solid black;
+        color: #929292;
+        table 
+        {
+            width: 100%;
+            line-height: 40px;
+        }
+    }
+}
+
+@media(max-width:1024px)
+{
+    .profile
+    {
+        border: none !important;
+    }
+}

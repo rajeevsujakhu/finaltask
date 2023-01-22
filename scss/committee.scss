@@ -1,0 +1,35 @@
+$brand : #004A89;
+
+@import 'header';
+@import 'nav';
+@import 'calender';
+@import 'footer';
+@import 'arrow';
+@import 'responsive';
+
+.headprofile
+{
+    .profile
+    {
+        table 
+        {
+            width: 100%;
+            line-height: 40px;
+        }
+        color: #929292;
+    }
+    
+    .spart 
+    {
+        padding-left: 50px;
+        border-left: 1px solid black;
+    }
+}
+
+@media(max-width:1024px)
+{
+    .spart
+    {
+        border: none !important;
+    }
+}
