@@ -9,15 +9,8 @@ $(window).scroll(function(){
     }
 })
 
-function disableScroll() {
-    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-  
-        window.onscroll = function() {
-            window.scrollTo(scrollLeft, scrollTop);
-        };
-}
-  
-function enableScroll() {
-    window.onscroll = function() {};
-}
+$(document).ready(function () {
+    $('.checkbtn').click(function () {
+        $('.checkbtn i').toggleClass('fa-solid fa-xmark');
+    });
+});
