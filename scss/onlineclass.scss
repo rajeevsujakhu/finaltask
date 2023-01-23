@@ -1,0 +1,37 @@
+$brand : #004A89;
+
+@import 'header';
+@import 'nav';
+@import 'calender';
+@import 'footer';
+@import 'arrow';
+@import 'responsive';
+
+.headprofile
+{
+    .onlineclass
+    {
+        h2 
+        {
+            color: $brand;
+        }
+        h1
+        {
+            padding-top: 20px;
+        }
+        button 
+        {
+            background-color: $brand;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+        }
+        .classes 
+        {
+            padding-top: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}
